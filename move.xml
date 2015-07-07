@@ -11,4 +11,12 @@ copyright notices and license terms. -->
             <field name="name">move_tree</field>
         </record>
     </data>
+    <data depends="stock_valued">
+        <!-- If stock valued was installed, remove unit price field (duplicated) -->
+        <record model="ir.ui.view" id="move_valued_view_tree">
+            <field name="model">stock.move</field>
+            <field name="inherit" ref="stock.move_view_tree"/>
+            <field name="name">move_valued_tree</field>
+        </record>
+    </data>
 </tryton>
