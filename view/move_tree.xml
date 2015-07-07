@@ -6,7 +6,7 @@ copyright notices and license terms. -->
     <xpath expr="/tree" position="replace_attributes">
         <tree string="Moves" editable="bottom"/>
     </xpath>
-    <xpath expr="/tree/field[@name='quantity']" position="after">
+    <xpath expr="/tree/field[@name='uom']" position="after">
         <field name="unit_price"/>
     </xpath>
 </data>
