@@ -19,4 +19,12 @@ copyright notices and license terms. -->
             <field name="name">move_valued_tree</field>
         </record>
     </data>
+    <data depends="stock_origin_purchase">
+        <!-- If stock origin purchase was installed, remove unit price field (duplicated) -->
+        <record model="ir.ui.view" id="move_purchase_view_tree">
+            <field name="model">stock.move</field>
+            <field name="inherit" ref="stock_origin_purchase.move_purchase_view_tree"/>
+            <field name="name">move_purchase_tree</field>
+        </record>
+    </data>
 </tryton>
